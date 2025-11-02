@@ -1,4 +1,4 @@
-# Script Analyzer Bot
+
 
 A full-stack AI-powered bot designed to analyze, process, and interact with scripts and speech inputs. This application leverages natural language processing (NLP), bot automation, and web technologies to provide script-based automation and analysis.
 

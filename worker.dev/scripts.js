@@ -2,7 +2,6 @@ import { Configuration, OpenAIApi } from 'openai';
 import axios from 'axios'; // For external API calls
 import { SpeechClient } from '@google-cloud/speech'; // Speech-to-Text
 import { TextToSpeechClient } from '@google-cloud/text-to-speech'; // Text-to-Speech
-
 // Initialize OpenAI
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY, // Store API key securely

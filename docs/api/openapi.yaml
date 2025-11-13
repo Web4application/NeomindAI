@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: NeomindAI API
+  version: 1.0.0
+  description: REST API for interacting with NeomindAI modules
+servers:
+  - url: http://localhost:8000
+paths:
+  /analyze:
+    post:
+      summary: Analyze text input
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+      responses:
+        '200':
+          description: Analysis result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  sentiment:
+                    type: string
+                  keywords:
+                    type: array
+                    items:
+                      type: string
+  /analyze_script:
+    post:
+      summary: Analyze a code/script file
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Script analysis result

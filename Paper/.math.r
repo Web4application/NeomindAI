@@ -23,7 +23,6 @@ Then:
 Look at the first four terms of the left side. Again, we add [math]2(a+b)^2+2(a+b)[/math] to both sides to make these four terms a perfect cube.
 
 [math](a+b)^3+3(a+b)^2+3(a+b)+1+ab=6ab(a+b)+6(a+b)^2+6(a+b)[/math]
-
 Group things together:
 
 [math](a+b+1)^3+ab=6(a+b)(ab+a+b+1)[/math]

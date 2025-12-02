@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Import and export &#8212; phpMyAdmin 5.2.1 documentation</title>
+    <title>Import and export </title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -449,7 +449,7 @@ computationally powerful ( &lt;<a class="reference external" href="https://yaml.
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; <a href="copyright.html">Copyright</a> 2012 - 2021, The phpMyAdmin devel team.
+        &#169; <a href="copyright.html">Copyright</a> 2012 - 2025, The  devel team.
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
     </div>
   </body>

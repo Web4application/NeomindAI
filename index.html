@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeomindAI Paper</title>
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-color: #fdfdfd;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #0a0a0a;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .sidebar h3 {
+      color: #0ff;
+      margin-top: 0;
+      font-family: "Arial", sans-serif;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #0ff;
+      text-decoration: none;
+      margin: 8px 0;
+      transition: color 0.2s;
+    }
+
+    .sidebar a:hover {
+      color: #0f0;
+    }
+
+    /* Main content area */
+    .main-content {
+      margin-left: 240px;
+      padding: 40px;
+      max-width: 900px;
+    }
+
+    h1, h2, h3 {
+      font-family: "Georgia", serif;
+      color: #0a0a0a;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    pre, code {
+      background: #eee;
+      padding: 8px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+
+    /* Diagram styling */
+    .flow-diagram {
+      background: #f4f4f4;
+      border-left: 4px solid #0ff;
+      padding: 20px;
+      margin: 20px 0;
+      font-family: monospace;
+      white-space: pre;
+    }
+
+    blockquote {
+      border-left: 4px solid #0ff;
+      padding-left: 10px;
+      color: #555;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>NeomindAI</h3>
+    <a href="index.html">Home</a>
+    <a href="Arduino.html">Arduino</a>
+    <a href="cfml.html">CFML</a>
+    <a href="models.html">Models</a>
+    <a href="pretrain.html">Pretrain</a>
+    <a href="robot_brain_system.html">Robot Brain System</a>
+    <a href="scripts.html">Scripts</a>
+    <a href="src.html">Src</a>
+    <a href="tools.html">Tools</a>
+  </div>
+
+  <!-- Main Paper Content -->
+  <div class="main-content">
+    <h1>NeomindAI System Overview</h1>
+
+    <h2>Abstract</h2>
+    <p>
+      This paper presents the architecture of NeomindAI, a hybrid system integrating
+      Arduino sensors and actuators with advanced AI layers for data processing,
+      predictive modeling, and physical interaction. The framework demonstrates
+      a closed-loop approach where real-world signals inform AI decision-making,
+      which then executes precise actions in the physical environment.
+    </p>
+
+    <h2>System Architecture</h2>
+    <p>The system is structured as a pipeline:</p>
+    <div class="flow-diagram">
+[Arduino Sensors & Actuators]
+   - Motors, LEDs, Cameras, LiDAR, Environmental Sensors
+   ↓
+[EDQ AI Layer]
+   - Data Cleaning, Aggregation, Real-Time Analytics
+   ↓
+[SERAI AI Layer]
+   - Advanced Reasoning, Predictive Modeling, Simulations
+   ↓
+[Arduino Execution]
+   - Physical Actions, Feedback Loops
+   ↓
+[Real World]
+    </div>
+
+    <h2>Mathematical Modeling</h2>
+    <p>We employ real-time analytics and predictive modeling. For example, sensor data can be processed using weighted averages:</p>
+    <p>Inline formula: \( S_\text{avg} = \frac{\sum_{i=1}^{n} w_i s_i}{\sum_{i=1}^{n} w_i} \)</p>
+    <p>Displayed equation:</p>
+    \[
+      F_\text{predicted} = \alpha \cdot x + \beta \cdot y + \gamma
+    \]
+
+    <h2>Arduino Integration Example</h2>
+    <pre><code>// Arduino LED blink example
+void setup() {
+  pinMode(13, OUTPUT);
+}
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}
+    </code></pre>
+
+    <h2>Discussion</h2>
+    <p>
+      The modular AI layers (EDQ & SERAI) allow seamless integration of analytics,
+      reasoning, and simulation. The feedback loop ensures continuous adaptation
+      to real-world changes, making the system robust for robotics, IoT,
+      and automation research.
+    </p>
+
+    <h2>Conclusion</h2>
+    <blockquote>
+      NeomindAI provides a versatile framework for integrating physical devices
+      with advanced AI reasoning, enabling real-time, intelligent control of
+      actuators and sensors with predictive insights.
+    </blockquote>
+  </div>
+
+  <!-- MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</body>
+</html>

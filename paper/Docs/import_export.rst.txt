@@ -1,3 +1,7 @@
+---
+tittle: page
+layout:
+---
 <html>
   <head>
     <meta charset="utf-8" />
@@ -27,7 +31,7 @@
         <li class="right" >
           <a href="charts.html" title="Charts"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">phpMyAdmin 5.2.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">paperweb documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="user.html" accesskey="U">User Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Import and export</a></li> 
       </ul>
@@ -44,9 +48,9 @@
 <h2>Import<a class="headerlink" href="#import" title="Permalink to this headline">¶</a></h2>
 <p>To import data, go to the “Import” tab in phpMyAdmin. To import data into a
 specific database or table, open the database or table before going to the
-“Import” tab.</p>
+“Import” tab.</p> 
 <p>In addition to the standard Import and Export tab, you can also import an SQL
-file directly by dragging and dropping it from your local file manager to the
+file directly by dragging and dropping it from your local file manager to the 
 phpMyAdmin interface in your web browser.</p>
 <p>If you are having troubles importing big files, please consult <a class="reference internal" href="faq.html#faq1-16"><span class="std std-ref">1.16 I cannot upload big dump files (memory, HTTP or timeout problems).</span></a>.</p>
 <p>You can import using following methods:</p>
